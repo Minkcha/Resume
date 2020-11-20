@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+}
+.head {
+    height: 200px;
+    width: 100%;
+    background-color: #4d3e3e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-name {
+    font-size: 5em;
+    color: #ffc38b;
+    animation: fade 3s infinite;
+    animation-direction: alternate; 
+
+}
+
+.navbar{
+    height: 45px;
+    width: 100%;
+    background: black;
+}
+
+body{
+    background: #fff3cd;
+}
+.bigbox{
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    justify-items: center;
+    padding-bottom: 12%;
+    
+}
+
+.innerbox{
+    background: white;
+    opacity: 70%;
+    margin: 1em 1em 1em 1em;
+    padding: 30px;
+    border-radius: 4px;
+}
+
+
+#first {
+    
+    background-color: #ff926b;
+    margin: 20px 20px;
+    border-radius: 3px;
+
+}
+
+#second {
+    background-color: #ffc38b;
+    margin: 20px 20px;
+    border-radius: 3px;
+}
+
+#third {
+    background-color: #e18237;
+    margin: 20px 20px;
+    border-radius: 3px;
+}
+
+footer{
+    color:white;
+    height: 6%;
+    width: 100%;
+    background: black;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+}
+
+.foot{
+    display: flex;
+    justify-content: center;
+    /* grid-template-columns: 30px 30px 30px 30px; */
+    font-size: 30px;
+    margin: 20px 20px;
+
+}
+.fb{
+    color: rgb(47, 47, 226);
+    font-size: 30px;
+    margin: 0px 20px;
+    text-decoration: none;
+}
+.ig{
+    color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+    font-size: 30px;
+    margin: 0px 20px;
+    text-decoration: none;
+}
+.line{
+    color: rgb(15, 218, 8);
+    font-size: 30px;
+    margin: 0px 20px;
+    text-decoration: none;
+}
+.tw{
+    color: #00acee;
+    font-size: 30px;
+    margin: 0px 20px;
+    text-decoration: none;
+}
+@media only screen and (min-width:376px){
+    #merge {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #second, #third {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:1200px){
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+}
+
+@keyframes fade {
+    from{opacity: 0%;}
+    to{opacity: 100%;}
+}
